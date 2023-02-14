@@ -1,0 +1,96 @@
+@import "variables";
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  min-width: max-content;
+  min-height: max-content;
+  background-image: url("/images/bg_login.png");
+  background-size: cover;
+}
+
+.bgFade {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #ffe0de 0%, rgba(255, 224, 222, 0.64) 60%, rgba(217, 217, 217, 0) 100%);
+}
+
+.loginBox {
+  justify-self: flex-end;
+  height: 100%;
+  width: 550px;
+  background: #ffffff95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 150px;
+  padding: 0 10px;
+  & h2 {
+    max-width: 80%;
+    color: $primary-text;
+    font-size: 40px;
+    text-align: center;
+    word-break: keep-all;
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+  & input {
+    width: 280px;
+    height: 45px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    &::placeholder {
+      opacity: 0.5;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  & a {
+    color: $primary-text-grey;
+    text-decoration: none;
+    justify-self: flex-start;
+    font-weight: 800;
+    &:hover {
+      color: $primary-text-dark;
+    }
+  }
+}
+
+.errorMsg {
+  color: red;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.linkText {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  & p {
+    color: $primary-bright;
+  }
+}
+
+.loginBtn {
+  width: 340px;
+  height: 60px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $primary-coral;
+  border: 1px solid $primary-coral;
+  background-color: #fff;
+  margin-bottom: 40px;
+  &:hover {
+    background-color: $primary-coral;
+    color: #fff;
+  }
+}

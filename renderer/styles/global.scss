@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+body {
+  margin: 0;
+  & * {
+    font-family: "Nanum Myenngjo", "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif, sans-serif;
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+  & h1,
+  & h2,
+  & h3 {
+    font-family: "Jua", "Nanum Myenngjo", "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif, sans-serif;
+  }
+}
+
+button {
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+  }
+}
